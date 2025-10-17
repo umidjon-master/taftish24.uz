@@ -1,0 +1,25 @@
+{
+  "navbar": {
+    "logo": "Taftish24uz",
+    "uzbek": "O‘zbekcha",
+    "russian": "Ruscha",
+    "searchTitle": "Qidiruv",
+    "searchPlaceholder": "Kalit so‘zni kiriting...",
+    "searchButton": "Qidirish",
+    "categories": [
+      "Dunyo",
+      "Texnologiya",
+      "Biznes",
+      "Sport",
+      "Madaniyat",
+      "Fan"
+    ]
+  },
+  "main": {
+    "tag": "BUGUNGI ASOSIY YANGILIK",
+    "title": "Zamonaviy axborot dunyosiga",
+    "highlight": "xush kelibsiz",
+    "description": "Eng so'nggi yangiliklar, tahlillar va ekspert fikrlari bir joyda",
+    "button": "Biz faqat muammolarni ko‘tarib chiqmaymiz — ularning yechimini ham izlaymiz. Taftish24.uz jamoasi siz bilan birga muammolarni ommaga olib chiqadi va ularni hal etishga intiladi. "
+  }
+}
