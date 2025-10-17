@@ -74,7 +74,7 @@ const NewsCard = ({
         </p>
         <div className="flex items-center justify-between pt-4 ">
           <span className="text-sm font-semibold text-primary transition-all duration-300 group-hover:translate-x-2">
-            Batafsil o'qish →
+            Batafsil o&apos;qish →
           </span>
         </div>
       </div>
