@@ -44,13 +44,15 @@ export function NavUser({
             >
               <Avatar className="h-8 w-8 rounded-lg grayscale">
                 <AvatarFallback className="rounded-lg">
-                  {user?.name.slice(0, 2).toLocaleUpperCase() || "TEST"}
+                  {user ? user?.name.slice(0, 2).toLocaleUpperCase() : "TE"}
                 </AvatarFallback>
               </Avatar>
               <div className="grid flex-1 text-left text-sm leading-tight">
-                <span className="truncate font-medium">{user.name}</span>
+                <span className="truncate font-medium">
+                  {user.name ? user.name : "No name"}
+                </span>
                 <span className="text-muted-foreground truncate text-xs">
-                  {user.login}
+                  {user.login ? user.login : "No email"}
                 </span>
               </div>
               <IconDotsVertical className="ml-auto size-4" />
@@ -67,13 +69,15 @@ export function NavUser({
                 <Avatar className="h-8 w-8 rounded-lg">
                   <AvatarFallback className="rounded-lg">
                     {" "}
-                    {user?.name.slice(0, 2).toLocaleUpperCase() || "TEST"}
+                    {user ? user?.name.slice(0, 2).toLocaleUpperCase() : "TE"}
                   </AvatarFallback>
                 </Avatar>
                 <div className="grid flex-1 text-left text-sm leading-tight">
-                  <span className="truncate font-medium">{user.name}</span>
+                  <span className="truncate font-medium">
+                    {user.name ? user.name : "No name"}
+                  </span>
                   <span className="text-muted-foreground truncate text-xs">
-                    {user.login}
+                    {user.login ? user.login : "No email"}
                   </span>
                 </div>
               </div>
