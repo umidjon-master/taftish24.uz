@@ -5,6 +5,7 @@ import "../globals.css";
 import { Providers } from "@/components/providers/providers";
 import { ReactNode } from "react";
 import { dir } from "i18next";
+import NextTopLoader from "nextjs-toploader";
 import CookieWrapper from "@/components/providers/CookiesProvider";
 
 const geistSans = Geist({
@@ -104,7 +105,20 @@ export default async function RootLayout({ children, params }: Props) {
         suppressHydrationWarning
       >
         <Providers>
-          <CookieWrapper>{children}</CookieWrapper>
+          <CookieWrapper>
+            <NextTopLoader
+              color="#3182CE"
+              initialPosition={0.5}
+              crawlSpeed={200}
+              height={2}
+              crawl={true}
+              showSpinner={false}
+              easing="ease"
+              speed={200}
+              shadow="0 0 10px #3182CE,0 0 5px #3182CE"
+            />
+            {children}
+          </CookieWrapper>
         </Providers>
       </body>
     </html>
