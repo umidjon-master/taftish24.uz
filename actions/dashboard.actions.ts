@@ -7,16 +7,16 @@ import NewsCollection from "@/models/News";
 export async function getDashboardStats() {
   await connectToDatabase();
 
-  // Parallel ravishda kategoriyalar, yangiliklar soni va jami ko‘rishlar
-  const [categoryCount, newsCount, viewsSumResult] = await Promise.all([
+  const [categoryCount, newsCount, newsDocs] = await Promise.all([
     CategoryCollection.countDocuments(),
     NewsCollection.countDocuments(),
-    NewsCollection.aggregate([
-      { $group: { _id: null, totalViews: { $sum: "$views" } } },
-    ]),
+    NewsCollection.find({}, { views: 1 }).lean(),
   ]);
 
-  const totalViews = viewsSumResult[0]?.totalViews || 0;
+  const totalViews = newsDocs.reduce(
+    (sum, doc) => sum + (Number(doc.views) || 0),
+    0
+  );
 
   return {
     categoryCount,
