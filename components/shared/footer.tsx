@@ -84,7 +84,14 @@ const Footer = () => {
                   icon="mdi:phone"
                   className="w-5 h-5 text-primary mt-0.5"
                 />
-                <span>+998 91 393 96 06</span>
+                <span>+998 88 555 45 79 </span>
+              </li>
+              <li className="flex items-start gap-3">
+                <Icon
+                  icon="mdi:phone"
+                  className="w-5 h-5 text-primary mt-0.5"
+                />
+                <span>+998 88 891 00 06 </span>
               </li>
               <li className="flex items-start gap-3">
                 <Icon

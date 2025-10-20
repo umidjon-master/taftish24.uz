@@ -59,6 +59,9 @@ const Main = () => {
           <div className="text-xl text-slate-300 mb-10 font-medium leading-relaxed max-w-2xl">
             {t("main.button")}
           </div>
+          <div >
+
+          </div>
         </div>
       </div>
 
