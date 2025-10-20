@@ -49,6 +49,7 @@ export function NewsTable({
             <TableHead>Sarlavha (UZ)</TableHead>
             <TableHead>Kategoriya</TableHead>
             <TableHead>Holat</TableHead>
+            <TableHead>Ko&apos;rishlar soni</TableHead>
             <TableHead className="text-right">Amallar</TableHead>
           </TableRow>
         </TableHeader>
@@ -64,6 +65,7 @@ export function NewsTable({
                     {item.category?.translations?.uz?.name || "—"}
                   </Badge>
                 </TableCell>
+                <TableCell>{item.views}</TableCell>
 
                 <TableCell>
                   {item.isPublished ? (
