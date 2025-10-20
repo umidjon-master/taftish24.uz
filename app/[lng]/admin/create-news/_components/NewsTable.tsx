@@ -48,8 +48,8 @@ export function NewsTable({
           <TableRow>
             <TableHead>Sarlavha (UZ)</TableHead>
             <TableHead>Kategoriya</TableHead>
-            <TableHead>Holat</TableHead>
             <TableHead>Ko&apos;rishlar soni</TableHead>
+            <TableHead>Holat</TableHead>
             <TableHead className="text-right">Amallar</TableHead>
           </TableRow>
         </TableHeader>
