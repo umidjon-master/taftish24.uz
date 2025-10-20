@@ -26,21 +26,31 @@ const Footer = () => {
             </h3>
             <p className="text-muted-foreground leading-relaxed">
               “TAFTISH24.UZ” — moliyaviy, ma’rifiy, huquqiy va axborot
-              yo‘nalishidagi onlayn portal. Mustaqil axborot manbasi sifatida
+              yo‘nalishidagi internet nashri. Mustaqil axborot manbasi sifatida
               ijtimoiy hayot, qonunchilik va iqtisodiy sohalarga oid ishonchli
               yangiliklarni yoritadi.
             </p>
 
             <div className="flex gap-4 pt-2">
               {[
-                { icon: "mdi:facebook", href: "#" },
-                { icon: "mdi:instagram", href: "#" },
-                { icon: "mdi:twitter", href: "#" },
-                { icon: "mdi:youtube", href: "#" },
+                {
+                  icon: "mdi:facebook",
+                  href: "https://www.facebook.com/Taftish24.uz",
+                },
+                { icon: "mdi:telegram", href: "https://t.me/taftish24uz" },
+                {
+                  icon: "mdi:instagram",
+                  href: "https://www.instagram.com/taftish24uz/",
+                },
+                {
+                  icon: "mdi:youtube",
+                  href: "https://www.youtube.com/@taftish24uz",
+                },
               ].map((item, i) => (
                 <Link
                   key={i}
                   href={item.href}
+                  target="_blank"
                   className="w-10 h-10 rounded-full bg-primary/10 hover:bg-primary flex items-center justify-center transition-all duration-300 hover:scale-110 group"
                 >
                   <Icon
@@ -92,13 +102,6 @@ const Footer = () => {
                   className="w-5 h-5 text-primary mt-0.5"
                 />
                 <span>+998 88 891 00 06 </span>
-              </li>
-              <li className="flex items-start gap-3">
-                <Icon
-                  icon="mdi:email"
-                  className="w-5 h-5 text-primary mt-0.5"
-                />
-                <span>info@taftish24.uz</span>
               </li>
               <li className="flex items-start gap-3">
                 <Icon
